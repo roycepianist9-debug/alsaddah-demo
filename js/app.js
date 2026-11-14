@@ -19,7 +19,7 @@ const I18N = {
     badgeCuisine: "Yemeni and Gulf cuisine",
     doorKicker: "Finding us",
     doorTitle: "Find the right door",
-    doorBody: "Ground floor of Jinying Building (金鹰大厦首层). Look for the gold sign: Sadda Restaurant / 洒德餐厅 — not SABA (沙巴餐厅) next door. There is also a white neon sign: SADDA RESTAURANT BBQ.",
+    doorBody: "Ground floor of Jinying Building (<span class=\"iso-ltr\">金鹰大厦首层</span>). Look for the gold sign: <span class=\"iso-ltr\">Sadda Restaurant / 洒德餐厅</span> — not SABA (<span class=\"iso-ltr\">沙巴餐厅</span>) next door. There is also a white neon sign: <span class=\"iso-ltr\">SADDA RESTAURANT BBQ</span>.",
     doorCaption: "The gold fascia on the Jinying Building arcade, with the 金鹰 sign at the edge.",
     taxiTitle: "Show this to your driver",
     copy: "Copy address",
@@ -95,7 +95,7 @@ const I18N = {
     badgeCuisine: "مطبخ يمني وخليجي",
     doorKicker: "الوصول إلينا",
     doorTitle: "ابحث عن الباب الصحيح",
-    doorBody: "الطابق الأرضي من مبنى جينيينغ (金鹰大厦首层). ابحث عن اللافتة الذهبية: Sadda Restaurant / 洒德餐厅 — وليس مطعم سابا (沙巴餐厅) المجاور. هناك أيضاً لافتة نيون بيضاء: SADDA RESTAURANT BBQ.",
+    doorBody: "الطابق الأرضي من مبنى جينيينغ (<span class=\"iso-ltr\">金鹰大厦首层</span>). ابحث عن اللافتة الذهبية: <span class=\"iso-ltr\">Sadda Restaurant / 洒德餐厅</span> — وليس مطعم سابا (<span class=\"iso-ltr\">沙巴餐厅</span>) المجاور. هناك أيضاً لافتة نيون بيضاء: <span class=\"iso-ltr\">SADDA RESTAURANT BBQ</span>.",
     doorCaption: "اللافتة الذهبية في رواق مبنى جينيينغ، وعلامة 金鹰 في الطرف.",
     taxiTitle: "أظهر هذا العنوان للسائق",
     copy: "انسخ العنوان",
@@ -170,7 +170,7 @@ const I18N = {
     badgeCuisine: "也门与海湾风味",
     doorKicker: "怎么找",
     doorTitle: "认准这扇门",
-    doorBody: "金鹰大厦首层。认准金色招牌「Sadda Restaurant / 洒德餐厅」，不要走隔壁的沙巴餐厅。门店还有一块白色霓虹招牌「SADDA RESTAURANT BBQ」。",
+    doorBody: "金鹰大厦首层。认准金色招牌「<span class=\"iso-ltr\">Sadda Restaurant / 洒德餐厅</span>」，不要走隔壁的沙巴餐厅。门店还有一块白色霓虹招牌「<span class=\"iso-ltr\">SADDA RESTAURANT BBQ</span>」。",
     doorCaption: "金鹰大厦廊下的金色招牌，旁边可见「金鹰」标识。",
     taxiTitle: "把这个地址给司机看",
     copy: "复制地址",
@@ -244,7 +244,9 @@ function applyLang(lang) {
   document.title = dict.title;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) el.textContent = dict[key];
+    if (dict[key] === undefined) return;
+    if (el.hasAttribute("data-i18n-html")) el.innerHTML = dict[key];
+    else el.textContent = dict[key];
   });
   document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
     const key = el.getAttribute("data-i18n-aria");

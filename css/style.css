@@ -330,3 +330,5 @@ html[dir="rtl"] .toast.show{transform:translateX(50%) translateY(0)}
   .tilt{transform:none !important;transition:none}
   body::before{display:none}
 }
+
+.iso-ltr{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
