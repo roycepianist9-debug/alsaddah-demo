@@ -1,5 +1,5 @@
 /* Al-Saddah landing — hours are a single editable constant. */
-const HOURS = "10:00 – 22:00";
+const HOURS = "08:00 – 02:00";
 // TODO: WhatsApp number and WeChat ID are not known — do not show until confirmed by the owner.
 
 const TAXI_ADDRESS = "广州市越秀区环市中路316号金鹰大厦首层，洒德餐厅";
@@ -46,9 +46,8 @@ const I18N = {
     groupsKicker: "Gatherings",
     groupsTitle: "Groups and events",
     groupsBody: "Tables for traders, families, and gatherings in Xiaobei. Call if you need a large table or a group meal.",
-    hoursKicker: "Today",
+    otherLines: "Other lines",
     hoursTitle: "Hours",
-    hoursConfirm: "Call to confirm",
     locKicker: "Xiaobei",
     locTitle: "Location",
     locLine: "Ground floor, Jinying Building (金鹰大厦首层).",
@@ -121,9 +120,8 @@ const I18N = {
     groupsKicker: "اللّقاءات",
     groupsTitle: "المجموعات والمناسبات",
     groupsBody: "طاولات للتجّار والعائلات والتجمّعات في شياوبي. اتصل إن احتجت طاولة كبيرة أو وجبة لمجموعة.",
-    hoursKicker: "اليوم",
+    otherLines: "خطوط أخرى",
     hoursTitle: "ساعات العمل",
-    hoursConfirm: "اتصل للتأكيد",
     locKicker: "شياوبي",
     locTitle: "الموقع",
     locLine: "الطابق الأرضي، مبنى جينيينغ (金鹰大厦首层).",
@@ -195,9 +193,8 @@ const I18N = {
     groupsKicker: "聚会",
     groupsTitle: "团体与宴会",
     groupsBody: "适合小北的商客、家庭和聚餐。如需大桌或团体用餐，请来电商量。",
-    hoursKicker: "今日",
+    otherLines: "其他电话",
     hoursTitle: "营业时间",
-    hoursConfirm: "电话确认今日时间",
     locKicker: "小北",
     locTitle: "位置",
     locLine: "金鹰大厦首层。",

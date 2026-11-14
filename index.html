@@ -49,6 +49,13 @@
       </div>
     </section>
 
+    <section id="hours" class="hours-top">
+      <div class="hours-top-inner">
+        <p class="kicker" data-i18n="hoursTitle">Hours</p>
+        <p class="hours-val iso-ltr" data-hours dir="ltr">08:00 – 02:00</p>
+      </div>
+    </section>
+
     <!--
       Menu sources (no prices — none clearly legible and recent):
       - Mandi, kabsa, madhbi, saltah, fahsa, tannour/Yemeni bread: Hala Guangzhou and Musafer/Saudis24.
@@ -127,22 +134,20 @@
     </section>
 
     <section id="groups" class="wrap">
-      <div class="split">
-        <div class="panel">
-          <p class="kicker" data-i18n="groupsKicker">Gatherings</p>
-          <h2 data-i18n="groupsTitle">Groups and events</h2>
-          <p class="prose" data-i18n="groupsBody">Tables for traders, families, and gatherings in Xiaobei. Call if you need a large table or a group meal.</p>
-          <div class="tels" data-i18n-aria="phonesAria" aria-label="Telephone numbers">
-            <a class="tel" href="tel:+862083541681">020-8354-1681</a>
-            <a class="tel" href="tel:+862083559928">020-8355-9928</a>
-            <a class="tel" href="tel:+8615013113821">150-1311-3821</a>
-          </div>
-        </div>
-        <div class="panel" id="hours">
-          <p class="kicker" data-i18n="hoursKicker">Today</p>
-          <h2 data-i18n="hoursTitle">Hours</h2>
-          <p class="hours-val" data-hours>10:00 – 22:00</p>
-          <a class="btn btn-terra" href="tel:+862083541681" data-i18n="hoursConfirm">Call to confirm</a>
+      <div class="panel">
+        <p class="kicker" data-i18n="groupsKicker">Gatherings</p>
+        <h2 data-i18n="groupsTitle">Groups and events</h2>
+        <p class="prose" data-i18n="groupsBody">Tables for traders, families, and gatherings in Xiaobei. Call if you need a large table or a group meal.</p>
+        <div class="call-block" data-i18n-aria="phonesAria" aria-label="Telephone numbers">
+          <a class="btn btn-terra btn-call-primary" href="tel:+862083541681">
+            <span data-i18n="navCall">Call</span>
+            <span class="iso-ltr">020-8354-1681</span>
+          </a>
+          <p class="other-lines">
+            <span data-i18n="otherLines">Other lines</span>
+            <a href="tel:+862083559928" class="iso-ltr">020-8355-9928</a>
+            <a href="tel:+8615013113821" class="iso-ltr">150-1311-3821</a>
+          </p>
         </div>
       </div>
     </section>

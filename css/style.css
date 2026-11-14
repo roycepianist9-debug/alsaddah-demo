@@ -162,20 +162,34 @@ html[lang="zh"] .dish-en{font-family:"Noto Sans SC",var(--font-display);font-siz
 .dish-zh{font-family:"Noto Sans SC",var(--font-sans);font-size:.95rem;color:var(--mute);margin:.1rem 0 0}
 .dish .desc{margin:.3rem 0 0;color:var(--mute);font-size:.95rem}
 
-/* Groups + hours */
-.split{display:grid;gap:1rem}
-@media(min-width:800px){.split{grid-template-columns:1fr 1fr}}
-.panel{background:var(--bg-2);border:1px solid var(--line);padding:1.25rem 1.2rem 1.4rem}
-.hours-val{font-family:var(--font-display);font-size:2.35rem;margin:.25rem 0 1rem;letter-spacing:.03em;color:var(--ink)}
-html[lang="ar"] .hours-val,html[lang="zh"] .hours-val{font-family:var(--font-sans);font-weight:600}
-.tels{display:flex;flex-direction:column;gap:.45rem;margin-top:1rem}
-.tel{
-  display:flex;align-items:center;justify-content:space-between;
-  min-height:48px;padding:0 .9rem;text-decoration:none;
-  border:1px solid var(--line);color:var(--ink);background:transparent;
-  font-variant-numeric:tabular-nums;
+/* Hours — compact strip under the hero */
+.hours-top{padding:0 var(--gutter) 1.6rem}
+.hours-top-inner{
+  max-width:var(--max);
+  margin-inline:auto;
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:.35rem 1.1rem;
 }
-.tel:hover{border-color:var(--gold);color:var(--gold-soft)}
+.hours-top .kicker{margin:0}
+.hours-val{font-family:var(--font-display);font-size:clamp(1.7rem, 3.2vw, 2.2rem);margin:0;letter-spacing:.03em;color:var(--ink)}
+html[lang="ar"] .hours-val,html[lang="zh"] .hours-val{font-family:var(--font-sans);font-weight:600}
+
+/* Groups */
+.panel{background:var(--bg-2);border:1px solid var(--line);padding:1.25rem 1.2rem 1.4rem}
+.btn-call-primary{gap:.65rem;margin-top:1rem;font-variant-numeric:tabular-nums;text-decoration:none}
+.other-lines{
+  margin:.85rem 0 0;
+  color:var(--mute);
+  font-size:.9rem;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:.3rem .9rem;
+}
+.other-lines a{color:var(--gold-soft);font-variant-numeric:tabular-nums;text-underline-offset:3px}
+.other-lines a:hover{color:var(--neon)}
 
 .btn{
   appearance:none;border:0;cursor:pointer;
