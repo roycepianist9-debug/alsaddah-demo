@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Al-Saddah (SADDA / 洒德餐厅) — Yemeni cuisine on the ground floor of Jinying Building, Xiaobei, Guangzhou. Not SABA next door.">
+  <meta name="description" content="Al-Saddah (SADDA / 洒德餐厅) — Yemeni cuisine on the ground floor of Jinying Building, Xiaobei, Guangzhou.">
   <title>Al-Saddah · 洒德餐厅 — Yemeni cuisine in Xiaobei, Guangzhou</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
@@ -27,133 +27,92 @@
       </div>
       <nav class="util-row" aria-label="Quick">
         <a class="pill pill-call" href="tel:+862083541681" data-i18n="navCall">Call</a>
-        <a class="pill" href="#taxi" data-i18n="navTaxi">Taxi card</a>
         <a class="pill" href="#menu" data-i18n="navMenu">What we serve</a>
+        <a class="pill" href="#location" data-i18n="navLoc">Location</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-label="Al-Saddah">
-      <div class="hero-media">
-        <img class="poster" src="img/hero-poster.webp" alt="" width="1600" height="900">
-        <video id="heroVideo" autoplay muted loop playsinline preload="metadata" poster="img/hero-poster.jpg" width="1280" height="720">
-          <source src="video/hero-loop.mp4" type="video/mp4">
-        </video>
+      <div class="hero-stage">
+        <div class="hero-frame">
+          <img class="poster" src="img/hero-poster.webp" alt="Sadda Restaurant BBQ neon sign in the rain at night" width="1600" height="900">
+          <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg" width="1280" height="720">
+            <source src="video/hero-loop.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
       <div class="hero-copy">
-        <h1 data-i18n="heroTitle">Yemeni cooking, just off Xiaobei station</h1>
+        <h1 data-i18n="heroTitle">Yemeni cooking in Xiaobei</h1>
         <p class="lede" data-i18n="heroLede">Mandi, kabsa, saltah, and bread from the oven — on the ground floor of Jinying Building.</p>
-        <div class="badges">
-          <span class="badge badge-metro" data-i18n="badgeMetro">90 m from Xiaobei Metro, Exit B</span>
-          <span class="badge" data-i18n="badgeCuisine">Yemeni and Gulf cuisine</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="taxi" class="wrap">
-      <p class="kicker" data-i18n="doorKicker">Finding us</p>
-      <h2 data-i18n="doorTitle">Find the right door</h2>
-      <div class="door-grid">
-        <div class="callout">
-          <p class="prose" data-i18n="doorBody" data-i18n-html style="margin:0">Ground floor of Jinying Building (金鹰大厦首层). Look for the gold sign: Sadda Restaurant / 洒德餐厅 — not SABA (沙巴餐厅) next door. There is also a white neon sign: SADDA RESTAURANT BBQ.</p>
-          <figure class="frame">
-            <picture>
-              <source srcset="img/entrance-gold.webp" type="image/webp">
-              <img src="img/entrance-gold.jpg" width="1600" height="900" alt="Sadda Restaurant, 洒德餐厅, gold sign on the Jinying Building arcade" loading="eager">
-            </picture>
-          </figure>
-          <p class="caption" data-i18n="doorCaption">The gold fascia on the Jinying Building arcade, with the 金鹰 sign at the edge.</p>
-        </div>
-
-        <article class="taxi tilt">
-          <h3 data-i18n="taxiTitle">Show this to your driver</h3>
-          <p class="addr" id="taxiAddress">广州市越秀区环市中路316号金鹰大厦首层，洒德餐厅</p>
-          <button type="button" class="btn" id="copyAddr" data-i18n="copy">Copy address</button>
-          <div class="metro">
-            <p class="kicker" data-i18n="metroLabel">By metro</p>
-            <p class="metro-line" data-i18n="metroLine">Line 5, Xiaobei Station (小北站), Exit B</p>
-            <p class="metro-walk" data-i18n="metroWalk">About 90 metres on foot.</p>
-          </div>
-          <p class="kicker maps-kicker" data-i18n="mapsLabel">Open in maps</p>
-          <div class="maps">
-            <a class="map-btn is-rec" href="https://www.amap.com/place/B0FFLOB4SR" rel="noopener noreferrer">
-              <span><span data-i18n="mapAmap">Amap</span><small data-i18n="mapAmapNote">Best once you are in mainland China</small></span>
-            </a>
-            <a class="map-btn" href="https://api.map.baidu.com/geocoder?address=%E5%B9%BF%E5%B7%9E%E5%B8%82%E8%B6%8A%E7%A7%80%E5%8C%BA%E7%8E%AF%E5%B8%82%E4%B8%AD%E8%B7%AF316%E5%8F%B7%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%E9%A6%96%E5%B1%82%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85&output=html&src=webapp" rel="noopener noreferrer" data-i18n="mapBaidu">Baidu Maps</a>
-            <a class="map-btn" href="https://maps.apple.com/?q=%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85%20%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%20%E5%B9%BF%E5%B7%9E%E5%B8%82%E8%B6%8A%E7%A7%80%E5%8C%BA%E7%8E%AF%E5%B8%82%E4%B8%AD%E8%B7%AF316%E5%8F%B7" rel="noopener noreferrer" data-i18n="mapApple">Apple Maps</a>
-            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85%20%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%20%E5%B9%BF%E5%B7%9E" rel="noopener noreferrer" data-i18n="mapGoogle">Google Maps</a>
-          </div>
-        </article>
       </div>
     </section>
 
     <!--
-      Menu sources (no prices shown — none were clearly legible and recent):
-      - Mandi, kabsa, madhbi, saltah, fahsa, tannour/Yemeni bread: Hala Guangzhou and Musafer/Saudis24 guides.
-      - 也门大饼, 阿拉伯小饼, 红米饭, 立顿红茶 (not featured), 牛肉砂锅: Dianping photo tags, shop 2310799.
-      - 大饼酱, 红烧羊排, 红米饭, 阿拉伯小饼, 爆炒羊肉: OpenRice 招牌菜, listing r7953557.
-      - Tea and Arabic coffee: restaurant window text (نقدم لكم الشاي والقهوة العربية).
-      - Skip.menu also lists haneeth, burmah, zurbian, mutton curry; omitted here as aggregator-only.
+      Menu sources (no prices — none clearly legible and recent):
+      - Mandi, kabsa, madhbi, saltah, fahsa, tannour/Yemeni bread: Hala Guangzhou and Musafer/Saudis24.
+      - 也门大饼, 阿拉伯小饼, 红米饭, 红烧羊排, 爆炒羊肉: OpenRice r7953557 and Dianping shop 2310799 photo tags.
+      - Tea and Arabic coffee: restaurant window text.
+      Photo slots below are empty on purpose — drop real dish photos into img/menu/ later.
     -->
     <section id="menu" class="wrap">
       <p class="kicker" data-i18n="menuKicker">The table</p>
       <h2 data-i18n="menuTitle">What we serve</h2>
       <div class="menu-list">
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: mandi — img/menu/mandi.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d1en">Mandi — lamb or chicken</h3>
             <p class="dish-ar" lang="ar" data-i18n="d1ar">المندي باللحم أو الدجاج</p>
             <p class="dish-zh" lang="zh" data-i18n="d1zh">曼迪手抓饭（羊肉 / 鸡肉）</p>
+            <p class="desc" data-i18n="d1desc">Slow-cooked spiced meat over long-grain rice.</p>
           </div>
-          <p data-i18n="d1desc">Slow-cooked spiced meat over long-grain rice.</p>
         </article>
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: kabsa-madhbi — img/menu/kabsa.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d2en">Kabsa and madhbi</h3>
             <p class="dish-ar" lang="ar" data-i18n="d2ar">الكبسة والمظبي</p>
             <p class="dish-zh" lang="zh" data-i18n="d2zh">卡布萨、麦兹比</p>
+            <p class="desc" data-i18n="d2desc">Spiced rice and roasted meat in the Yemeni and Gulf style.</p>
           </div>
-          <p data-i18n="d2desc">Spiced rice and roasted meat in the Yemeni and Gulf style.</p>
         </article>
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: saltah-fahsa — img/menu/saltah.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d3en">Saltah and fahsa</h3>
             <p class="dish-ar" lang="ar" data-i18n="d3ar">السلتة والفحسة</p>
             <p class="dish-zh" lang="zh" data-i18n="d3zh">萨尔塔、法赫萨</p>
+            <p class="desc" data-i18n="d3desc">Hot stone-pot Yemeni stews.</p>
           </div>
-          <p data-i18n="d3desc">Hot stone-pot Yemeni stews.</p>
         </article>
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: yemeni-bread — img/menu/bread.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d4en">Yemeni bread</h3>
             <p class="dish-ar" lang="ar" data-i18n="d4ar">الخبز اليمني</p>
             <p class="dish-zh" lang="zh" data-i18n="d4zh">也门大饼、阿拉伯小饼</p>
+            <p class="desc" data-i18n="d4desc">Bread baked in the oven and served fresh.</p>
           </div>
-          <p data-i18n="d4desc">Bread baked in the oven and served fresh.</p>
         </article>
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: lamb-ribs — img/menu/lamb.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d5en">Lamb ribs and stir-fried lamb</h3>
             <p class="dish-ar" lang="ar" data-i18n="d5ar">أضلاع الغنم ولحم الغنم المقلي</p>
             <p class="dish-zh" lang="zh" data-i18n="d5zh">红烧羊排、爆炒羊肉</p>
           </div>
         </article>
-        <article class="dish tilt">
-          <div class="dish-names">
+        <article class="dish">
+          <figure class="dish-slot" aria-hidden="true"><!-- PHOTO: rice-tea-coffee — img/menu/tea.webp --></figure>
+          <div>
             <h3 class="dish-en" data-i18n="d6en">Red rice, tea, and Arabic coffee</h3>
             <p class="dish-ar" lang="ar" data-i18n="d6ar">الأرز الأحمر والشاي والقهوة العربية</p>
             <p class="dish-zh" lang="zh" data-i18n="d6zh">红米饭，茶与阿拉伯咖啡</p>
           </div>
         </article>
       </div>
-      <figure class="menu-aside">
-        <picture>
-          <source srcset="img/dallahs.webp" type="image/webp">
-          <img src="img/dallahs.jpg" width="1200" height="1080" alt="" loading="lazy">
-        </picture>
-        <p class="caption" data-i18n="dallahCaption">Dallah coffee pots in the window of Al-Saddah.</p>
-      </figure>
     </section>
 
     <section id="groups" class="wrap">
@@ -173,13 +132,40 @@
           <h2 data-i18n="hoursTitle">Hours</h2>
           <p class="hours-val" data-hours>10:00 – 22:00</p>
           <a class="btn btn-terra" href="tel:+862083541681" data-i18n="hoursConfirm">Call to confirm</a>
-          <figure style="margin:1.2rem 0 0">
-            <picture>
-              <source srcset="img/entrance-bbq.webp" type="image/webp">
-              <img src="img/entrance-bbq.jpg" width="1600" height="900" alt="SADDA RESTAURANT BBQ neon sign" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover">
-            </picture>
-          </figure>
         </div>
+      </div>
+    </section>
+
+    <section id="location" class="wrap">
+      <p class="kicker" data-i18n="locKicker">Xiaobei</p>
+      <h2 data-i18n="locTitle">Location</h2>
+      <div class="loc-grid">
+        <div>
+          <p class="prose" data-i18n="locLine">Ground floor, Jinying Building (金鹰大厦首层).</p>
+          <p class="addr" id="taxiAddress">广州市越秀区环市中路316号金鹰大厦首层，洒德餐厅</p>
+          <button type="button" class="btn" id="copyAddr" data-i18n="copy">Copy address</button>
+          <div class="metro">
+            <p class="kicker" data-i18n="metroLabel">By metro</p>
+            <p class="metro-line" data-i18n="metroLine">Line 5, Xiaobei Station (小北站), Exit B</p>
+            <p class="metro-walk" data-i18n="metroWalk">About 90 metres on foot.</p>
+          </div>
+          <p class="kicker maps-kicker" data-i18n="mapsLabel">Open in maps</p>
+          <div class="maps">
+            <a class="map-btn is-rec" href="https://www.amap.com/place/B0FFLOB4SR" rel="noopener noreferrer">
+              <span><span data-i18n="mapAmap">Amap</span><small data-i18n="mapAmapNote">Best once you are in mainland China</small></span>
+            </a>
+            <a class="map-btn" href="https://api.map.baidu.com/geocoder?address=%E5%B9%BF%E5%B7%9E%E5%B8%82%E8%B6%8A%E7%A7%80%E5%8C%BA%E7%8E%AF%E5%B8%82%E4%B8%AD%E8%B7%AF316%E5%8F%B7%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%E9%A6%96%E5%B1%82%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85&output=html&src=webapp" rel="noopener noreferrer" data-i18n="mapBaidu">Baidu Maps</a>
+            <a class="map-btn" href="https://maps.apple.com/?q=%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85%20%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%20%E5%B9%BF%E5%B7%9E%E5%B8%82%E8%B6%8A%E7%A7%80%E5%8C%BA%E7%8E%AF%E5%B8%82%E4%B8%AD%E8%B7%AF316%E5%8F%B7" rel="noopener noreferrer" data-i18n="mapApple">Apple Maps</a>
+            <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=%E6%B4%92%E5%BE%B7%E9%A4%90%E5%8E%85%20%E9%87%91%E9%B9%B0%E5%A4%A7%E5%8E%A6%20%E5%B9%BF%E5%B7%9E" rel="noopener noreferrer" data-i18n="mapGoogle">Google Maps</a>
+          </div>
+        </div>
+        <figure class="loc-photo">
+          <picture>
+            <source srcset="img/entrance-gold.webp" type="image/webp">
+            <img src="img/entrance-gold.jpg" width="1600" height="900" alt="Sadda Restaurant, 洒德餐厅, gold sign on the Jinying Building arcade" loading="lazy">
+          </picture>
+          <p class="caption" data-i18n="locCaption">The gold fascia on the Jinying Building arcade.</p>
+        </figure>
       </div>
     </section>
 
