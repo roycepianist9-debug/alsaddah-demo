@@ -16,6 +16,7 @@ const I18N = {
     navLoc: "Location",
     heroTitle: "Yemeni cooking in Xiaobei",
     heroLede: "Mandi, kabsa, saltah, and bread from the oven — on the ground floor of Jinying Building.",
+    vibeLabel: "The room",
     menuKicker: "The table",
     menuTitle: "What we serve",
     d1en: "Mandi — lamb or chicken",
@@ -90,6 +91,7 @@ const I18N = {
     navLoc: "الموقع",
     heroTitle: "مطبخ يمني في شياوبي",
     heroLede: "المندي والكبسة والسلتة وخبز الفرن — في الطابق الأرضي من مبنى جينيينغ.",
+    vibeLabel: "القاعة",
     menuKicker: "المائدة",
     menuTitle: "ماذا نقدّم",
     d1en: "Mandi — lamb or chicken",
@@ -163,6 +165,7 @@ const I18N = {
     navLoc: "位置",
     heroTitle: "也门美食，就在小北",
     heroLede: "曼迪手抓饭、卡布萨、萨尔塔，还有出炉的也门烤饼——金鹰大厦首层。",
+    vibeLabel: "店内",
     menuKicker: "餐桌",
     menuTitle: "我们提供的菜",
     d1en: "Mandi — lamb or chicken",
@@ -292,21 +295,21 @@ async function copyAddress() {
 }
 
 function initVideo() {
-  const v = document.getElementById("heroVideo");
-  if (!v) return;
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (reduce) {
-    v.pause();
-    v.removeAttribute("autoplay");
-    return;
-  }
-  v.muted = true;
-  const tryPlay = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
-  if (v.readyState >= 2) tryPlay();
-  else {
-    v.addEventListener("canplay", tryPlay, { once: true });
-    v.load();
-  }
+  document.querySelectorAll("video[autoplay]").forEach((v) => {
+    if (reduce) {
+      v.pause();
+      v.removeAttribute("autoplay");
+      return;
+    }
+    v.muted = true;
+    const tryPlay = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}); };
+    if (v.readyState >= 2) tryPlay();
+    else {
+      v.addEventListener("canplay", tryPlay, { once: true });
+      v.load();
+    }
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
