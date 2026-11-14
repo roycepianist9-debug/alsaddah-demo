@@ -236,8 +236,24 @@ h2{font-size:clamp(1.7rem, 3.5vw, 2.5rem);margin:0 0 1rem}
 .btn-ghost:hover{border-color:var(--saffron);color:var(--saffron-soft);background:transparent}
 .btn-terra{background:var(--terra);color:var(--cream)}
 .btn-terra:hover{background:var(--terra-deep)}
-.metro{margin:1.1rem 0 0;padding-top:1rem;border-top:1px solid rgba(250,247,242,.14);color:#E8DFD0}
-.metro p{margin:.2rem 0 0;font-size:.95rem}
+.metro{margin:1.1rem 0 0;padding-top:1rem;border-top:1px solid rgba(250,247,242,.14)}
+.metro p{margin:.25rem 0 0;font-size:.95rem}
+/* Dark card/footer text must stay light — do not inherit body ink color */
+.taxi,
+.taxi p,
+.metro,
+.metro p,
+.metro-line,
+.metro-walk{color:#FAF7F2}
+.taxi .kicker{color:#E8C47A}
+.metro-line{font-weight:600;line-height:1.45}
+.metro-walk{color:#E8DFD0}
+.maps-kicker{margin-top:1.1rem}
+footer,
+footer p,
+footer .nap,
+footer .legal{color:#E8DFD0}
+footer .nap strong{color:#FAF7F2}
 .maps{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:1rem}
 .map-btn{
   display:inline-flex;align-items:center;justify-content:center;text-align:center;
